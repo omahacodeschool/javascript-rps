@@ -3,6 +3,10 @@ JavaScript Rock-Paper-Scissors
 
 (The setup/installation instructions for this assignment are identical to the [JavaScript Starter](https://github.com/omahacodeschool/javascript-starter#readme) that you might already be familiar with.)
 
+You can launch C9 with this assignment's starter code by clicking this button:
+
+<a href="https://c9.io/auth/github?r=https%3A%2F%2Fc9.io%2Fopen%2F%3Fclone_url%3Dgit%2540github.com%253Aomahacodeschool%252Fjavascript-rps.git"><img src="https://cl.ly/mld9/create-workspace.png" alt=""></a>
+
 ---
 
 Your assignment is to build a playable game of Rock-Paper-Scissors. The game will be played in a terminal by two people. There aren't any graphics. Instead, each player will just type in their "weapon" of choice when it's their turn. It's a very short game :)
