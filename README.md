@@ -26,7 +26,7 @@ Creating this game will require you to understand...
 - Conditionals
 - Variables
 
-It might also help to know about functions/methods, but their use is not required to get through the assignment.It might also help to know about functions/methods, but their use is not required to get through the assignment.
+It might also help to know about functions/methods, but their use is not required to get through the assignment.
 
 ## Example
 
