@@ -47,3 +47,46 @@ Done early? For a challenge, try some of these tasks:
 - If you haven't already, can you find any opportunities for writing a function in this program?
 - What happens if a player types in something besides either "Rock", "Paper", or "Scissors"? See if you can make the game exit immediately if a player fails to choose a valid weapon.
 - Can you find in this [documentation reference](https://github.com/anseki/readline-sync) what code is needed to **hide** Player 1's weapon from the cheating eyes of Player 2?
+
+---
+
+### Enhancing the Program
+
+Have you finished all of the bonuses? If you're ready to move ahead for a new challenge, here are new ways to improve your Rock-Paper-Scissors game.
+
+#### Weapon Validation
+
+Store the valid "weapon" choices (`rock`, `paper`, and `scissors`) in an Array. Then update the weapon validation feature (which verifies the user typed in a valid weapon) so that it simply checks if what the user typed in is in that Array or not.
+
+#### Input Normalization
+
+Make sure the program runs properly whether users type in `rock` or `Rock` or `ROCK` or `rOCk`.
+
+#### Series
+
+Change the program so that, instead of merely playing 1 game, the program plays _3 games_. Have the computer display the score after each game (including ties).
+
+It's okay if there's not a winner at the end of the 3-game series.
+
+Remember to organize your code using functions, so that you're not repeating too much of your code for each game.
+
+#### Series Scoreboard
+
+Instead of just outputting the score after each game, display a "scoreboard" in the terminal that shows each game's result. Something like this:
+
+```
+Game 1: Player 2 won
+Game 2: Player 2 won
+Game 3: Tie
+```
+
+Implement this by storing each game's result in an `Array`. Then fetch each game's result from the `Array` to display the scoreboard.
+
+---
+
+#### Optional
+
+If you're _still_ finding that you want another challenge, here are two paths you can go down:
+
+1. Look up [Rock-Paper-Scissors-Lizard-Spock](https://www.google.com/search?q=rock+paper+scissors+lizard+spock&oq=rock+paper+scirr&aqs=chrome.3.69i57j0l5.2864j0j7&sourceid=chrome&ie=UTF-8) and implement that game.
+2. Implement Tic-Tac-Toe (as a new project). (You'll have to copy the files from the [javascript-starter](https://github.com/omahacodeschool/javascript-starter) to begin the new project.)
