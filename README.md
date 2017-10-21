@@ -58,10 +58,6 @@ Have you finished all of the bonuses? If you're ready to move ahead for a new ch
 
 Store the valid "weapon" choices (`rock`, `paper`, and `scissors`) in an Array. Then update the weapon validation feature (which verifies the user typed in a valid weapon) so that it simply checks if what the user typed in is in that Array or not.
 
-#### Input Normalization
-
-Make sure the program runs properly whether users type in `rock` or `Rock` or `ROCK` or `rOCk`.
-
 #### Series
 
 Change the program so that, instead of merely playing 1 game, the program plays _3 games_. Have the computer display the score after each game (including ties).
@@ -90,3 +86,83 @@ If you're _still_ finding that you want another challenge, here are two paths yo
 
 1. Look up [Rock-Paper-Scissors-Lizard-Spock](https://www.google.com/search?q=rock+paper+scissors+lizard+spock&oq=rock+paper+scirr&aqs=chrome.3.69i57j0l5.2864j0j7&sourceid=chrome&ie=UTF-8) and implement that game.
 2. Implement Tic-Tac-Toe (as a new project). (You'll have to copy the files from the [javascript-starter](https://github.com/omahacodeschool/javascript-starter) to begin the new project.)
+
+---
+
+# Loops
+
+Loops!
+
+Are you ready for loops? Below you'll find some of the same enhancements that you were asked to make in previous classes. The difference is that, this time, you should alter the implementation to use loops (where appropriate).
+
+So the tasks below will be familiar, but your challenge is to use loops whereas before you would not have done that.
+
+---
+
+---
+
+## Weapon Validation
+
+Your program should already verify that the player has chosen a valid weapon. But currently you simply exit the program if the player enters an invalid weapon.
+
+Your task is to change the implementation so that the program instead keeps on asking the player for a weapon until they give you a valid response.
+
+Use a `while` loop for this!
+
+```javascript
+// Returns True if the weapon is invalid.
+function isInvalid(w){
+    if ((w !== "Rock") && (w !== "Paper") && (w != "Scissors")){
+        return true
+    }
+}
+
+var weapon = ask.question("Enter your weapon");
+
+// Keep on asking if the weapon is invalid!
+while (isInvalid(weapon)){
+    weapon = ask.question("Enter your weapon");
+}
+```
+
+## Series
+
+You've used functions to create a 3-game serious. Now, use a loop so that you don't have to repeat the function call three times. Instead, achieve this with JavaScript using a `while` loop.
+
+```javascript
+var gameCounter = 1;
+
+while (gameCounter < 4){
+    // Keep playing...
+}
+```
+
+---
+
+## Series Scoreboard
+
+You should be storing each game's result in an Array so you can display a scoreboard, like this:
+
+```
+Player 2 won
+Player 2 won
+Tie
+```
+
+Use a `for` loop to loop through the games' results.
+
+```javascript
+for (let result of scoreboard) {
+  console.log(result);
+}
+```
+
+### Extra
+
+If you also want to get the Game Number, you might want to check out the [most advanced loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for). That'll let you do something like this:
+
+```
+Game 1: Player 2 won
+Game 2: Player 2 won
+Game 3: Tie
+```
