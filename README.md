@@ -99,8 +99,6 @@ So the tasks below will be familiar, but your challenge is to use loops whereas 
 
 ---
 
----
-
 ## Weapon Validation
 
 Your program should already verify that the player has chosen a valid weapon. But currently you simply exit the program if the player enters an invalid weapon.
@@ -124,6 +122,8 @@ while (isInvalid(weapon)){
     weapon = ask.question("Enter your weapon");
 }
 ```
+
+---
 
 ## Series
 
